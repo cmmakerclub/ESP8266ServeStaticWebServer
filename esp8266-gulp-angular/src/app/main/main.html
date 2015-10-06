@@ -1,0 +1,22 @@
+<div layout="vertical" layout-fill>
+
+  <md-content>
+    <header>
+      <acme-navbar creationDate="main.creationDate" />
+    </header>
+
+    <section class="jumbotron">
+      <h1>{{ textModel }}</h1>
+      <p class="lead">
+        <img  ng-show="textModel" src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
+        Always a pleasure scaffolding your apps.
+      </p>
+      <md-button class="md-raised animated infinite" ng-class="main.classAnimation" ng-click="main.showToastr()">Splendid Toastr</md-button>
+      <p>
+        With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']" />
+      </p>
+    </section>
+      <input ng-model="textModel" />
+  </md-content>
+
+</div>
